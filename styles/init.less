@@ -1,0 +1,147 @@
+/**
+ * Copyright (C) 2016 Ivan Kravets. All rights reserved.
+ *
+ * This source file is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License version 2
+ * as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License along
+ * with this program; if not, write to the Free Software Foundation, Inc.,
+ * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+@import "ui-variables";
+
+.pio {
+
+  .controls {
+    margin-top: 1em;
+  }
+
+  .selected-placeholder {
+    display: block;
+    margin-left: 1em;
+  }
+
+  .selected-boards {
+    display: none;
+  }
+
+  .unselect {
+    margin-left: 1em;
+  }
+
+  select.form-control, input.form-control {
+    color: @text-color;
+    border-color: @button-border-color;
+    background-color: @button-background-color;
+    &:hover,
+    &:focus {
+      box-shadow: none;
+      background-color: @button-background-color-hover;
+    }
+  }
+
+  .command-status {
+    display: none;
+    text-align: center;
+    color: @text-color-info;
+    font-size: 1.5 * @font-size;
+  }
+}
+
+.install-progress {
+  width: 100%;
+  margin-bottom: 1em;
+}
+
+@pio-version-space: .5em;
+
+.pio-about {
+  text-align: center;
+
+  &.about {
+    padding-top: 2em ;
+    padding-bottom: 2em;
+  }
+
+  .version {
+    margin: auto @pio-version-space;
+
+    .version-string {
+      margin-left: @pio-version-space;
+    }
+  }
+
+  .version-copy:hover {
+    color: lighten(@text-color, 15%);
+    cursor: pointer;
+  }
+}
+
+.pio-about-item {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.with-love .icon-heart {
+  color: @text-color-error;
+}
+
+.directory-select-wrapper {
+  margin-top: 1em;
+}
+
+.pio .boards-loading-placeholder {
+  text-align: center;
+}
+
+.pio-donate .links .btn {
+  font-size: 1.3em;
+}
+
+.pio-donate h3 {
+  margin: 1em;
+}
+
+.pio-import-arduino-ide-project {
+  .pick-directory-wrapper {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+  }
+
+  .lib-manager-input-wrapper {
+    display: none;
+  }
+}
+
+.pio-serial-monitor {
+  .advanced-settings {
+    display: none;
+  }
+}
+
+.tree-view .pio-active-directory {
+  @active-directory-border-size: 2px;
+  &.project-root {
+    border-left: @active-directory-border-size solid @background-color-info;
+  }
+
+  /* Matches all selected items (those having lighen background). Note the space between "&" and "." */
+  & .selected::before {
+    margin-left: @component-icon-padding + @active-directory-border-size;
+  }
+
+  /* Matches the root directory only. Note that there are no space between "&" and "." */
+  &.selected::before {
+    border-right: 2 * @active-directory-border-size solid @background-color-info;
+    border-top-right-radius: 2 * @active-directory-border-size;
+    border-bottom-right-radius: 2 * @active-directory-border-size;
+  }
+}
