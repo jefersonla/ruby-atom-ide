@@ -1,0 +1,49 @@
+{
+  "name": "ruby-ide",
+  "main": "./lib/main",
+  "version": "0.0.0",
+  "description": "Ruby IDE for Atom, with debug, lint, completion and heroku integration.",
+  "keywords": [
+    "Ruby IDE",
+    "IDE",
+    "build",
+    "ruby",
+    "heroku",
+    "ruby-lint",
+    "ruby-debug",
+    "ruby-completion"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JeremyHeleine/ruby-atom-ide.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jefersonla/ruby-atom-ide/issues"
+  },
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0"
+  },
+  "consumedServices": {
+    "tool-bar": {
+      "versions": {
+        "^0.1.0": "consumeToolBar"
+      }
+    },
+    "runInTerminal": {
+      "versions": {
+        "^0.14.5": "consumeRunInTerminal"
+      }
+    }
+  },
+  "dependencies": {
+    "command-join": "^1.0.1",
+    "fs-extra": "^0.26.5",
+    "ini": "^1.3.4",
+    "lockfile": "^1.0.1",
+    "request": "^2.69.0",
+    "semver": "^5.1.0",
+    "tar": "^2.2.1",
+    "temp": "^0.8.3"
+  }
+}
