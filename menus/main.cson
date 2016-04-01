@@ -1,0 +1,119 @@
+'menu': [
+  {
+    'label': 'RubyIDE
+    'submenu': [
+      {
+        'label': 'Initialize new Ruby Project or update existing...'
+        'command': 'ruby-ide:initialize-new-project'
+      }
+      {
+        'label': 'Open Project folder...'
+        'command': 'application:add-project-folder'
+      }
+      {'type': 'separator'}
+      {
+        'label': 'Run',
+        'command': 'ruby-ide:target:run'
+      }
+      {
+        'label': 'Debug'
+        'command': 'rubby-ide:target:debug'
+      }
+      {
+        'label': 'Heroku Upload'
+        'command': 'ruby-ide:target:heroku-upload'
+      }
+      {
+        'label': 'Toggle Log Panel'
+        'command': 'build:toggle-panel'
+      }
+      {'type': 'separator'}
+      {
+        'label': 'Terminal'
+        'submenu': [
+          {
+            'label': 'Toggle'
+            'command': 'ruby-ide-terminal:toggle'
+          },
+          {
+            'label': 'New Terminal'
+            'command': 'ruby-ide-terminal:new'
+          },
+          {
+            'label': 'Previous Terminal'
+            'command': 'ruby-ide-terminal:prev'
+          },
+          {
+            'label': 'Next Terminal'
+            'command': 'ruby-ide-terminal:next'
+          },
+          {
+            'label': 'Close Terminal'
+            'command': 'ruby-ide-terminal:close'
+          },
+          {
+            'label': 'Close All Terminals'
+            'command': 'ruby-ide-terminal:close-all'
+          }
+        ]
+      }
+      {
+        'label': 'Library Manager'
+        'command': 'ruby-ide:libmanager-gui'
+      }
+      {'type': 'separator'}
+      {
+        'label': 'Settings'
+        'submenu': [
+          {
+            'label': 'RubyIDE'
+            'command': 'ruby-ide:settings:pkg-ruby-ide'
+          }
+          {
+            'label': 'Build'
+            'command': 'ruby-ide:settings:pkg-build'
+          }
+          {
+            'label': 'Linter'
+            'command': 'ruby-ide:settings:pkg-linter'
+          }
+          {
+            'label': 'Tool Bar'
+            'command': 'ruby-ide:settings:pkg-tool-bar'
+          }
+        ]
+      }
+      {'type': 'separator'}
+      {
+        'label': 'Documentation'
+        'command': 'ruby-ide:help-docs'
+      }
+      {
+        'label': 'Help'
+        'submenu': [
+          {
+            'label': 'Frequently Asked Questions'
+            'command': 'ruby-ide:help-faq'
+          }
+          {
+            'label': 'Report RubyIDE issue'
+            'command': 'ruby-ide:help.report-rubyide-issue'
+          }
+          {'type': 'separator'}
+          {
+            'label': 'Donate'
+            'command': 'ruby-ide:donate'
+          }
+          {
+            'label': 'Website'
+            'command': 'ruby-ide:help-website'
+          }
+          {
+            'label': 'About'
+            'command': 'ruby-ide:help-about'
+          }
+        ]
+      }
+    ]
+  }
+]
