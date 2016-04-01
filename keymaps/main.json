@@ -1,16 +1,14 @@
 {
   ".platform-darwin atom-workspace, .platform-darwin atom-text-editor": {
     "cmd-alt-b": "ruby-ide:target:run",
-    "cmd-alt-c": "ruby-ide:target:??",
+    "cmd-alt-d": "ruby-ide:target:debug",
     "cmd-alt-u": "ruby-ide:target:upload-heroku",
-    "cmd-shift-t": "ruby-ide:maintenance.?",
-    "cmd-shift-m": "ruby-ide:maintenance.?"
+    "cmd-shift-b": "ruby-ide:target:bundle-install"
   },
   ".platform-linux atom-workspace, .platform-linux atom-text-editor, .platform-win32 atom-workspace, .platform-win32 atom-text-editor": {
     "ctrl-alt-b": "ruby-ide:target:run",
-    "ctrl-alt-c": "ruby-ide:target:??",
+    "ctrl-alt-d": "ruby-ide:target:debug",
     "ctrl-alt-u": "ruby-ide:target:upload-heroku",
-    "alt-shift-t": "ruby-ide:maintenance.?",
-    "alt-shift-m": "ruby-ide:maintenance.?"
+    "ctrl-shift-b": "ruby-ide:target:upload-heroku"
   }
 }

@@ -29,33 +29,12 @@
       }
       {'type': 'separator'}
       {
-        'label': 'Terminal'
-        'submenu': [
-          {
-            'label': 'Toggle'
-            'command': 'ruby-ide-terminal:toggle'
-          },
-          {
-            'label': 'New Terminal'
-            'command': 'ruby-ide-terminal:new'
-          },
-          {
-            'label': 'Previous Terminal'
-            'command': 'ruby-ide-terminal:prev'
-          },
-          {
-            'label': 'Next Terminal'
-            'command': 'ruby-ide-terminal:next'
-          },
-          {
-            'label': 'Close Terminal'
-            'command': 'ruby-ide-terminal:close'
-          },
-          {
-            'label': 'Close All Terminals'
-            'command': 'ruby-ide-terminal:close-all'
-          }
-        ]
+        'label': 'Bundle Install'
+        'command': 'ruby-ide:target:bundle-install'
+      }
+      {
+        'label': 'Bundle Check'
+        'command': 'ruby-ide:target:bundle-check'
       }
       {
         'label': 'Library Manager'
