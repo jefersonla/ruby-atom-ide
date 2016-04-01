@@ -1,23 +1,6 @@
-/**
- * Copyright (C) 2016 Ivan Kravets. All rights reserved.
- *
- * This source file is free software; you can redistribute it and/or
- * modify it under the terms of the GNU General Public License version 2
- * as published by the Free Software Foundation.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License along
- * with this program; if not, write to the Free Software Foundation, Inc.,
- * 51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
- */
-
 @import "ui-variables";
 
-.pio {
+.ruby-ide {
 
   .controls {
     margin-top: 1em;
@@ -60,9 +43,9 @@
   margin-bottom: 1em;
 }
 
-@pio-version-space: .5em;
+@ruby-ide-version-space: .5em;
 
-.pio-about {
+.ruby-ide-about {
   text-align: center;
 
   &.about {
@@ -71,10 +54,10 @@
   }
 
   .version {
-    margin: auto @pio-version-space;
+    margin: auto @ruby-ide-version-space;
 
     .version-string {
-      margin-left: @pio-version-space;
+      margin-left: @ruby-ide-version-space;
     }
   }
 
@@ -84,7 +67,7 @@
   }
 }
 
-.pio-about-item {
+.ruby-ide-about-item {
   margin-top: 1em;
   margin-bottom: 1em;
 }
@@ -97,19 +80,19 @@
   margin-top: 1em;
 }
 
-.pio .boards-loading-placeholder {
+.ruby-ide .boards-loading-placeholder {
   text-align: center;
 }
 
-.pio-donate .links .btn {
+.ruby-ide-donate .links .btn {
   font-size: 1.3em;
 }
 
-.pio-donate h3 {
+.ruby-ide-donate h3 {
   margin: 1em;
 }
 
-.pio-import-arduino-ide-project {
+.ruby-ide-import-arduino-ide-project {
   .pick-directory-wrapper {
     text-align: center;
     margin-top: 1em;
@@ -121,13 +104,13 @@
   }
 }
 
-.pio-serial-monitor {
+.ruby-ide-serial-monitor {
   .advanced-settings {
     display: none;
   }
 }
 
-.tree-view .pio-active-directory {
+.tree-view .ruby-ide-active-directory {
   @active-directory-border-size: 2px;
   &.project-root {
     border-left: @active-directory-border-size solid @background-color-info;
